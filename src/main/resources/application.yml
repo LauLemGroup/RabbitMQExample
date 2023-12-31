@@ -1,0 +1,7 @@
+spring:
+  rabbitmq:
+    listener:
+      simple:
+        retry:
+          enabled: true
+          max-attempts: 2

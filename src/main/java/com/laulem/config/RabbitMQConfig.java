@@ -47,22 +47,22 @@ public class RabbitMQConfig {
     }
 
     @Bean
-    Binding bindingTopic1(@Qualifier("topicQueue1") Queue queue, TopicExchange exchange) {
+    Binding bindingTopic1(@Qualifier("topicQueue1") Queue queue, @Qualifier("topicExchange") TopicExchange exchange) {
         return BindingBuilder.bind(queue).to(exchange).with("foo.bar.baz");
     }
 
     @Bean
-    Binding bindingTopic2(@Qualifier("topicQueue2") Queue queue, TopicExchange exchange) {
+    Binding bindingTopic2(@Qualifier("topicQueue2") Queue queue, @Qualifier("topicExchange") TopicExchange exchange) {
         return BindingBuilder.bind(queue).to(exchange).with("foo.bar.baz");
     }
 
     @Bean
-    Binding bindingFanout1(@Qualifier("fanoutQueue1") Queue queue, FanoutExchange exchange) {
+    Binding bindingFanout1(@Qualifier("fanoutQueue1") Queue queue, @Qualifier("fanoutExchange") FanoutExchange exchange) {
         return BindingBuilder.bind(queue).to(exchange);
     }
 
     @Bean
-    Binding bindingFanout2(@Qualifier("fanoutQueue2") Queue queue, FanoutExchange exchange) {
+    Binding bindingFanout2(@Qualifier("fanoutQueue2") Queue queue, @Qualifier("fanoutExchange") FanoutExchange exchange) {
         return BindingBuilder.bind(queue).to(exchange);
     }
 }
