@@ -1,5 +1,0 @@
-
-G	java:S106"+Replace this use of System.out by a logger.(žÿ§‰8ÇÐâýË1
-]	java:S125"<This block of commented-out lines of code should be removed.(«èð§ûÿÿÿÿ8òÔÿË1
-]
-java:S1128"@Remove this unused import 'java.util.concurrent.CountDownLatch'.(¤ƒô§8Ž§»þË1

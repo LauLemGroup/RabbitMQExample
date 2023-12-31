@@ -22,6 +22,6 @@ public class RabbitMQController {
     @PostMapping(value = "/message")
     public void addMessage(@RequestBody final String message) {
         rabbitTemplate.convertAndSend(RabbitMQConfig.topicExchangeName, "foo.bar.baz", message);
-        //rabbitTemplate.convertAndSend(RabbitMQConfig.fanoutExchangeName, "ffffff", message);
+        rabbitTemplate.convertAndSend(RabbitMQConfig.fanoutExchangeName, "IGNORE", message);
     }
 }
