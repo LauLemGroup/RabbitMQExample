@@ -1,4 +1,4 @@
-package com.laulem.receiver;
+package com.laulem.rabbitmq.example.receiver;
 
 import lombok.Getter;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;

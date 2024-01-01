@@ -1,6 +1,6 @@
-package com.laulem.controller;
+package com.laulem.rabbitmq.example.controller;
 
-import com.laulem.config.RabbitMQDDLCheckConfig;
+import com.laulem.rabbitmq.example.config.RabbitMQDDLCheckConfig;
 import lombok.RequiredArgsConstructor;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.web.bind.annotation.*;
