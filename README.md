@@ -5,7 +5,6 @@ Demo of RabbitMQ usage: Producing/Consuming messages with a Topic Exchange and a
 
 ### Reference Documentation
 * RabbitMQ launch : https://www.rabbitmq.com/ / https://spring.io/guides/gs/messaging-rabbitmq/
-* Cluster (not in this tutorial): https://www.rabbitmq.com/clustering.html
 
 ### RabbitMQ launch
 ```
@@ -25,3 +24,7 @@ docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.12-ma
 - A **Queue** is a buffer that stores messages. Consumers connect to the queue to receive messages. Queues are bound to an exchange and will receive messages from it based on the binding configuration, which can include a routing key or pattern in the case of TopicExchanges.
 - A **Routing Key** is a string that the exchange uses to route messages to queues. In a TopicExchange, the routing key is a pattern with words separated by dots (e.g., "user.created", "user.updated"). The routing logic of the exchange uses this key to determine which queues should receive the message.
 - A **Dead letter queue (DLQ)** is a service implementation to store messages that the messaging system cannot or should not deliver
+
+### URL
+* Cluster (not in this tutorial): https://www.rabbitmq.com/clustering.html
+* Authentication, Authorisation, Access Control: https://www.rabbitmq.com/access-control.html
