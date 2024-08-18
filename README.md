@@ -1,4 +1,4 @@
-# RabbitMQExample - LauLem.com
+# RabbitMQExample - [LauLem.com](https://www.laulem.com)
 Demo of RabbitMQ usage: Producing/Consuming messages with a Topic Exchange and a Fanout Exchange. Using a Dead Letter Queue (DLQ)
 
 ## Getting Started
